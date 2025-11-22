@@ -43,7 +43,6 @@ In a new terminal, navigate to the root directory and start the React applicatio
 npm install
 npm run dev
 ```
-The application will be accessible at `http://localhost:5173`.
 
 ## 📝 Usage
 
