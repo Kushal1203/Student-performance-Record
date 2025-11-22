@@ -1,0 +1,52 @@
+{
+  "name": "student-performance-analyzer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron:start": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && npm run electron\"",
+    "electron:build": "electron-builder"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.3",
+    "jspdf-autotable": "^5.0.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "build": {
+    "appId": "com.student.performance.analyzer",
+    "productName": "Student Performance Analyzer",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "python_dist/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.1",
+    "electron": "^39.2.3",
+    "electron-builder": "^26.0.12",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wait-on": "^9.0.3"
+  }
+}

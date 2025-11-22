@@ -1,0 +1,5 @@
+{
+  "name": "Student Performance Analyzer",
+  "description": "An interactive dashboard to analyze student performance across different semesters and engineering departments. Select a semester to view department-specific data, including performance charts and student lists.",
+  "requestFramePermissions": []
+}
