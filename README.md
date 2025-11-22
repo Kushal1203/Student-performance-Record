@@ -1,6 +1,12 @@
 
 # Student Performance Analyzer
 
+To run this web application you have to install 
+run the folder in terminal or command prompt
+```bash
+npm install
+```
+
 A comprehensive application designed to track, analyze, and manage student academic performance for Sha-Shib College of Technology. This tool simplifies the process of recording marks, calculating grades (SGPA/CGPA), and generating performance reports.
 
 ## 🚀 Features
